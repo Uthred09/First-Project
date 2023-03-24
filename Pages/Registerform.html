@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ksb Bonsai login/singup</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #F7FBFC;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .container {
+            display: flex;
+            margin-top: 2%;
+            box-shadow: 5px 5px 10px;
+            border-radius: 20px;
+        }
+        .box {
+            width: 400px;
+            height: 620px;
+        }
+        #signupcontainer{
+            width: 550px;
+        }
+
+        .picture {
+            padding-left: 15%;
+            padding-top: 20%;
+
+        }
+
+        #image {
+            width: 320px;
+            height: 400px;
+        }
+
+        #CreateAccount {
+            text-decoration: underline;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #CreateAccount:hover {
+            color: #218721;
+        }
+
+        .box-2 {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .text{
+            font-size: larger;
+        }
+        label{
+            font-size: 1.1em;
+        }
+        
+        #fname, #lname,#username,#email,#newpassword,
+        #confirmpassword {
+            width: 95%;
+            padding: 10px;
+            border-radius: 7px;
+            margin: 5px;
+            border: 0px;
+            background-color: #f1f1f1;
+            color: #212121;
+            font-size: medium;
+
+        }
+        #fname, #lname{
+            width: 20%;
+            height: 15px;
+        }
+
+        .box-3 {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #box-3 {
+            margin-left: 20%;
+            color: black;
+        }
+
+        #box-3:hover {
+            color: #218721;
+        }
+
+        #login {
+            width: 90%;
+            height: 50px;
+            margin: 5px;
+            padding: 10px;
+            margin-left: 5%;
+            color: white;
+            background-color: #212121;
+            border-radius: 5px;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #login:hover {
+            color: grey;
+        }
+
+        .box-4 {
+            display: flex;
+            margin: 5px;
+        }
+
+        .line {
+            width: 42%;
+            height: 2px;
+            background-color: grey;
+            margin: 10px;
+        }
+
+        .box-5 {
+            display: flex;
+            align-items: center;
+        }
+
+        .childbox {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .logos {
+            width: 33px;
+            height: 33px;
+        }
+
+        .logos:hover {
+            width: 36px;
+            height: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <!-- Main container containing two box -->
+        <div class="container">
+            <!-- First box for picture and Resgister -->
+            <div class="box">
+                <!-- class for picture -->
+                <div class="picture">
+                    <img src="../images/login.jpg" alt="bonsai plant" id="image">
+                </div>
+                <!-- div for text -->
+                <div>
+                    <a href="./login.html" style="color: #212121;"><p id="CreateAccount">Back to login</p></a>
+                </div>
+            </div>
+            <!-- Second box of main container containng login form -->
+            <div class="box" id="signupcontainer">
+
+                <h1 style="padding: 5px; font-weight:lighter; margin-bottom: 0px;">KSB Bonsai</h1>
+                <div style="height: 1.5px; background-color: #53535335; margin-bottom: 15px;" ></div>
+
+                <div class="box-2">
+                    <label>First Name:</label>
+                    <input type="text" name="fname" id="fname">
+                    <label>Last Name:</label>
+                    <input type="text" name="lname" id="lname">
+                    <br>
+                    <br>
+                    <label>Username:</label>
+                    <input type="text" name="username" id="username">
+                    <label>Email:</label>
+                    <input type="email" name="email" id="email">
+                    <label >New Password:</label>
+                    <input type="password" name="password" id="newpassword">
+                    <label>Confirm Password:</label>
+                    <input type="password" name="password" id="confirmpassword">
+                </div>
+                <button type="submit" id="login">Create an Account</button>
+
+                <div class="box-4">
+                    <div class="line"></div>
+                    <div>
+                        <p style="text-align: center; margin: 0px; font-weight: 600;">OR</p>
+                    </div>
+                    <div class="line"></div>
+                </div>
+
+                <div class="box-5">
+                    <div class="childbox">
+                        <p>Signup with:</p>
+                    </div>
+                    <div class="childbox">
+                        <img src="../images/Google.png" alt="" class="logos">
+                        <img src="../images/facebook.png" alt="" class="logos">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

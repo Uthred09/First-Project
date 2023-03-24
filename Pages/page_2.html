@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../style.css">
+	<script src="../script.js"></script>
+	<style>
+		html[data-theme="dark"] {
+			--comment-background-color: #292b2b;
+			--background-color: #181a1a;
+			--background-color-leftcolumn: #292b2b;
+			--background-color-rightcolumn: #292b2b;
+			--text-color: #EEEEEE;
+		}
+
+		html[data-theme="light"] {
+			--comment-background-color: #EEEEEE;
+			--background-color-leftcolumn: #EEEEEE;
+			--background-color-rightcolumn: #F6F6F6;
+			--backgroun-color: white;
+			--text-color: #393E46;
+		}
+
+		body {
+			background: var(--background-color);
+			color: var(--text-color);
+			margin: 0px;
+		}
+
+		.navbar {
+			position: absolute;
+		}
+
+		.technology {
+			background-image: url(../images/Technology.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 700px;
+		}
+
+		.text {
+			width: 35%;
+			padding: 40px;
+			height: inherit;
+			padding-top: 100px;
+			color: white;
+			font-size: xx-large;
+
+		}
+
+		.row {
+			display: flex;
+			background-color: var(--backgroun-color);
+		}
+
+		.left-column {
+			background-color: var(--background-color-leftcolumn);
+		}
+
+		.left-column,
+		.right-column {
+			margin: 30px;
+			border-radius: 20px;
+			padding: 10px;
+		}
+
+		.right-column {
+			background-color: var(--background-color-rightcolumn);
+			padding: 10px;
+			margin-left: 10px
+		}
+
+		.imageslider {
+			width: 700px;
+			margin: 30px;
+			height: 380px;
+			border: 1px solid;
+			box-shadow: 5px 5px 10px black;
+		}
+
+		.imageslider img {
+			width: 100%;
+			height: inherit;
+		}
+
+		.card {
+			padding: 20px 100px;
+			font-size: large;
+		}
+
+		.box {
+			padding: 10px;
+		}
+
+		.link {
+			margin: 10px;
+			margin-top: 50px;
+			padding-left: 60px;
+			font-weight: bold;
+		}
+
+		.link li {
+			padding: 3px;
+		}
+
+		.link a {
+			color: var(--text-color);
+		}
+
+		.right-column a {
+			color: var(--text-color);
+			letter-spacing: 1.5px;
+
+		}
+
+		#comments {
+			background-color: var(--comment-background-color);
+			padding: 15px;
+			margin: 10px;
+			border-radius: 10px;
+		}
+
+		.comment {
+			border-radius: 10px;
+			padding: 10px;
+			margin: 5px;
+			background-color: var(--comment-background-color);
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="logoBox">
+			<img src="../images/logo2.png" alt="">
+		</div>
+
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="./page_2.html" style="background-color: #f7f9fb;">Blog</a></li>
+			<li><a href="./page_3.html">Product</a></li>
+			<li><a href="./page_4.html">Research</a></li>
+			<li><a href="./page_5.html">Aboutus</a></li>
+		</ul>
+
+		<div class="icons">
+			<input type="search" id="searcharea" style="margin-right: 0px;">
+			<a href="#" style="margin-left: 0px;"><img src="../images/search-line.png"> </a>
+			<a href="./login.html"><img src="../images/user-fill.png"> </a></a>
+			<a href="#"><img src="../images/shopping-cart-2-fill.png"> </a>
+			<a href="" id="toogle-theme"><img src="../images/contrast-2-fill.png" alt="image"></a>
+		</div>
+	</nav>
+	<br><br>
+	<main>
+		<div class="technology">
+			<div class="text">
+				<h3 style="color: white">"Technology is at the core of every aspect of a franchise's operations and can
+					be leveraged
+					to drive sales growth."</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="left-column">
+				<article>
+					<div class="card" id="paragraph1">
+						<h1>Technology</h1>
+						<div class="imageslider" id="image">
+							<img src="../images/technology1.jpg" alt="">
+						</div>
+						<p>Communication, entertainment, work and productivity, health and fitness, transportation, and
+							shopping have all undergone substantial changes as a result of technology. Increased
+							productivity, comfort, and accessibility have resulted from this, but it has also created
+							new difficulties and sparked worries about security and privacy.</p>
+						<p> One of the key benefits of technology is its ability to connect people and bring them
+							together. While technology offers many benefits, it also poses potential challenges and
+							negative impacts.
+							With the help of technology, we can accomplish complex tasks with ease, making our lives
+							more convenient and comfortable.
+							As technology continues to advance, the world is changing rapidly, and we rely on various
+							technologies to carry out our daily tasks."</p>
+						<div class="link">
+							<ul>
+								<li><a href="#heading 2">POSITIVE IMPACTS OF TECHNOLOGY</a></li>
+								<li><a href="#heading 3">NEGAVTIVE IMPACTS OF TECHNOLOGY</a></li>
+								<li><a href="#heading 4">IMPACTS OF TECHNOLOGY WHILE SELLING BONSAI PLANTS</a></li>
+								<li><a href="#heading 5">CONCLUSION</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="card">
+						<h3 id="heading 2">POSITIVE IMPACTS OF TECHNOLOGY</h3>
+						<p>Technology has had a profound impact on the world, significantly changing the way we live
+							our daily lives. Advancements in technology are continuously shaping various aspects of
+							society such as:-<br><br>
+							1.Communication<br>
+							2.Healthcar<br>
+							3.Governance<br>
+							4.Education<br>
+							5.Business<br>
+						<p>Faster and more convenient communication through email, instant messaging and video
+							conferencing. Real-time health monitoring through electronic health records, telemedicine,
+							and wearable
+							devices. Renewable energy technologies has reduced the negative impact on environment. New
+							opportunities for learning through online courses, virtual classrooms, and educational
+							apps.</p>
+					</div>
+
+
+					<div class="card">
+						<h3 id="heading 3">NEGAVTIVE IMPACTS OF TECHNOLOGY</h3>
+						<p>- With the rise of technology, people have become less reliant on face-to-face interactions
+							for building relationships.</p>
+						<p>- Excessive use of technology, such as video games, has led to a decrease in physical
+							activity and a decline in the health of young people.</p>
+						<p>- The implementation of automated systems in manufacturing companies has led to job loss for
+							many employees.</p>
+						<p>-Thirdly, technology has made people lazy and unwilling to engage in strenuous
+							activities....(Harrington, 2008, p.113)</p>
+						<p>On the other hand, There are many controversial medical technologies such as gene therapy,
+							pharmacogenomics and stem cell research (Hunt, 2008, p.113). The use of genetic research in
+							finding new cures for diseases is imperative and laudable, too in behave of benefits of
+							technology...</p>
+						<br>
+					</div>
+
+					<div class="card">
+						<h3 id="heading 4">IMPACTS OF TECHNOLOGY WHILE SELLING BONSAI PLANTS</h3>
+						<p>- E-commerce has also revolutionized the way business is conducted, allowing companies to
+							expand and operate on a global scale through online marketplaces. Additionally, platforms
+							such as BOES ("Business Online Entertainment System") enable businesses to import and export
+							products digitally, creating a fair playing field for small and medium-sized companies to
+							compete with larger corporations.</p>
+						<p>- Technology has allowed bonsai sellers to showcase their products via online platforms and
+							social media.</p>
+						<p>- With the help of technology, sellers are able to engage with customers through live chat
+							and email.</p>
+						<p>- Bonsai sellers are able to track customer behavior, markert trends through analysis tools.
+						</p>
+						<p> # One example of this is the role technology plays in the business sector, making it easier
+							for companies to increase efficiency and productivity, and for consumers to access goods and
+							services with ease.</p>
+						<br>
+					</div>
+
+					<div class="card">
+						<h3 id="heading 5">CONCLUSION</h3>
+						<p>Technology has become an integral part of modern life, providing a wide range of benefits
+							that have made our lives easier and more comfortable. It has revolutionized communication,
+							transportation, and other aspects of daily living, helping us to accomplish tasks more
+							quickly and efficiently. Technologies such as vaccines have eradicated certain diseases and
+							the internet has played an important role in promoting health and healthcare. Additionally,
+							governments have leveraged technology to improve the delivery of services and enhance
+							defense and security. However, technology also has its downsides, such as negative effects
+							on human interactions and socialization. Overall, the key is to use technology responsibly,
+							to reap its benefits while minimizing its downsides.</p>
+						<br>
+					</div>
+				</article>
+			</div>
+			<div class="right-column">
+				<div class="box">
+					<h3 style="margin-bottom: 0px;">Categories</h3>
+					<div style="height: 1.5px; background-color: grey;"></div>
+					<ul>
+						<li><a href="#">Indoor Bonsai</a></li>
+						<li><a href="#">Outdoor Bonsai</a></li>
+						<li><a href="#">Use of tools</a></li>
+						<li><a href="#">Care and maintenance of plants</a></li>
+					</ul><br>
+					<br>
+				</div>
+
+				<div class="box">
+					<h4>You may also like this</h4>
+					<ul>
+						<li><a href="#">Care Tips for Indoor Bonsai</a></li>
+						<p>"Proper watering, pruning, and positioning are key to keeping your bonsai healthy and
+							beautiful. Remember, a bonsai is not just a plant, it's a living art piece that requires
+							dedicated attention."
+						<h5>more...</h5>
+						</p>
+						<li><a href="#">Bonsai Gifts based on Occassion</a></li>
+						<p>"Make a lasting impression with a bonsai gift, symbolizing growth, harmony, and balance. It's
+							the perfect way to add a touch of elegance and tranquility to any occasion, whether it's a
+							wedding, graduation, or a new home."
+						<h5>more...</h5>
+						</p>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<section id="comments">
+		<h3>Comments</h3>
+		<div class="comment">
+			<p>This article is really helpful. I enjoyed learning this blog.</p>
+			<p>- ABC Company</p>
+			<br>
+		</div>
+		<div class="comment">
+			<p>Contents are easy to understand. Thank you for using simple language.</p>
+			<p>- XYZ Blog</p>
+		</div>
+	</section>
+	<footer>
+		<!-- The footer tag is for foot setion at the bottom area of webpage -->
+		<div style="height: 1.5px; background-color: gray; margin: 0px;"> </div>
+		<div class="Footer-main">
+			<div class="footer-box"
+				style="text-align: center; display: flex; justify-content: space-between; flex-direction: column; flex-wrap: wrap;">
+				<!-- the style is for this container only -->
+				<div class="footer-logo">
+					<img src="../images/logo2.png" alt="logo" style="border-radius: 50%; height: 200px;">
+				</div>
+				<div class="SocialMedia">
+					<a href="http://"><img src="../images/Facebook.png" alt="Facebook"></a>
+					<a href="http://"><img src="../images/instagram.png" alt="Instagram"></a>
+					<a href="http://"><img src="../images/pinterest.png" alt=""></a>
+					<a href="http://"><img src="../images/twitter.png" alt="Twitter"></a>
+				</div>
+			</div>
+
+			<div class="footer-box">
+				<h3>Customer care</h3>
+				<p>Contact us</p>
+				<p>Phone no: <span id="contactNumber">9435987429</span></p>
+				<p>Email: <a href="mailto:ksbBonsai2023@gmail.com" style="color: #112D4E; "
+						id="email">ksbBonsai2023@gmail.com</a> </p>
+				<a href="../Pages/FeedbackForm.html">
+					<p>FeedbackForm</p>
+				</a>
+
+			</div>
+			<div class="footer-box">
+				<h3>Resources</h3>
+				<p>Terms of condition</p>
+				<p>Privacy policy</p>
+				<p>Support</p>
+				<p>learn design</p>
+			</div>
+			<div class="footer-box">
+				<h3>Community</h3>
+				<p>Discussion Formus</p>
+				<p>Code of Conduct</p>
+				<p>Contributing</p>
+				<p>API Reference</p>
+			</div>
+		</div>
+		<div style="height: 1.5px; background-color: gray; margin: 0px;"> </div>
+		<section style="padding-left: 30px;">
+			<p>All Nepal | Kathmandu | Pokhara | Lalitpur | Bhaktapur | Biratnagar | Butwal | Dang | Chitwan |
+				Heatuda |
+				Nepalgunj |</p>
+			<p> <img src="../images/copyright-line.png" alt=""> 2023 | KSB_Bonsai</p>
+		</section>
+	</footer>
+	<script>
+		document.getElementById('toogle-theme').addEventListener('click', (event) => {
+			event.preventDefault();
+			var theme = document.querySelector('html').getAttribute('data-theme')
+			if (theme === 'light') {
+				document.querySelector('html').setAttribute('data-theme', 'dark')
+			}
+			else {
+				document.querySelector('html').setAttribute('data-theme', 'light')
+			}
+
+		})
+		// script to slide image
+		var images = ['../images/technology2.jpg',"../images/technology3.jpg", "../images/technology4.png","../images/technology5.png"];
+
+		var x = 0;
+		var img = document.getElementById('image');
+		setInterval(slider, 4000);
+
+		function slider() {
+			if (x < images.length) {
+				x = x + 1;
+			}
+			else {
+				x = 1;
+			}
+			img.innerHTML = "<img src=" + images[x - 1] + ">";
+		}
+	</script>
+</body>
+
+</html>

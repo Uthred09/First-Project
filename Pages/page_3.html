@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSB bonsai</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            font-family: sans-serif;
+        }
+
+        #discountOffer {
+            padding: 3px;
+            margin-top: 0px;
+            text-align: center;
+            background-color: #96ade1;
+        }
+
+        .container {
+            margin-left: 50px;
+            padding-bottom: 0px;
+            font-size: large;
+        }
+
+        #count {
+            font-size: x-large;
+            color: #2B3467;
+        }
+
+        .main {
+            display: flex;
+            margin: 30px;
+            margin-top: 0px;
+            margin-left: 8%;
+            box-shadow: 5px 5px 10px;
+
+        }
+
+        .slider {
+            width: 80%;
+            height: 500px;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .intro {
+            font-weight: 50;
+            margin-left: 100px;
+            font-size: xx-large;
+            text-decoration: underline;
+            margin-top: 100px;
+            margin-bottom: 0px;
+        }
+
+        .productContainer {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        .box,
+        .box1,
+        .box2 {
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px;
+            padding: 15px;
+            margin: 10px;
+            width: 25%;
+            align-items: center;
+        }
+
+        .plantImage {
+            width: 75%;
+            height: 200px;
+            border-radius: 30px;
+            margin-left: 25px;
+        }
+
+        .productContainer p {
+            font-size: 16px;
+        }
+
+        /* change the style for name of plant  */
+        .box,
+        .box1,
+        .box2 h4 {
+            text-align: start;
+            font-weight: lighter;
+            color: black;
+            font-size: large;
+        }
+
+        .rating {
+            margin: 5px 0px 10px 0px;
+        }
+
+        .rating img {
+            width: 20px;
+        }
+
+        #button {
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 5px;
+            background-color: #218721;
+            color: white;
+            border: 0px;
+        }
+
+        .box:hover {
+            width: 28%;
+            height: 13%;
+        }
+
+        #button:hover {
+            width: 100px;
+            height: 45px;
+        }
+
+        .offer {
+            text-decoration: line-through;
+            color: rgb(197, 41, 41);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logoBox">
+            <img src="../images/logo2.png" alt="">
+        </div>
+
+        <ul>
+            <li><a href="../index.html" class="active1">Home</a></li>
+            <li><a href="./page_2.html" class="active2">Blog</a></li>
+            <li><a href="./page_3.html" class="active3" style="background-color: #f7f9fb;">Product</a></li>
+            <li><a href="./page_4.html" class="active4">Research</a></li>
+            <li><a href="./page_5.html" class="active5">Aboutus</a></li>
+        </ul>
+
+        <div class="icons">
+            <input type="search" id="searcharea" style="margin-right: 0px;">
+            <a href="#" style="margin-left: 0px;"><img src="../images/search-line.png"> </a>
+            <a href="./login.html"><img src="../images/user-fill.png"> </a></a>
+            <a href="#"><img src="../images/shopping-cart-2-fill.png"> </a>
+        </div>
+    </nav>
+    <!--product page -->
+    <div id="discountOffer">
+        <marquee>
+            <h4>use code <u><b><i>ksbbonsai</i></b></u> for 30% off on every product!!</h4>
+        </marquee>
+    </div>
+    <section style="margin-top: 100px;">
+        <div class="container">
+            <p>Best Selling Bonsai plant below $50. Offer Ends at:<span id="count">1000</span> second</h1>
+        </div>
+
+        <!-- slider -->
+        <div class="main">
+            <div class="slider" id="img">
+                <img src="../images/chinesepepper.png" alt="image">
+            </div>
+            <div class="slider" id="img2">
+                <img src="../images/chinese.png" alt="image">
+            </div>
+        </div>
+    </section>
+
+    <div style="height: 1.5px; background-color: gray; margin-bottom: 0px; margin-top: 100px;"></div>
+    <h1 class="intro">All Products available at KSB Bonsai</h1>
+    <div class="productContainer">
+        <div class="box">
+            <img src="../images/Chinese Elm Bonsai Trees.jpg" alt="images" class="plantImage">
+            <h4>Chinese Elm Bonsai Trees</h4>
+            <p>The Chinese Elm is a fantastic tree for beginners and advanced enthusiasts who want to practice their
+                clip-and-grow.Strong branch and root development makes it simple to train and shape.
+                The Chinese Elm Bonsai tree may be pruned to continuously grow new leaves in any shape that you like.
+            </p>
+            <p>Price: <span>$69.99</span></p>
+            <div class="rating">
+                <a href="#"><img src="../images/star-fill.png"></a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <a href="#"><img src="../images/star-half-line.png"></a>
+                <label style="margin-left: 5px;">350 review</label>
+            </div>
+            <input type="button" value="Buy Now" id="button">
+            <input type="button" value="Add to Cart" id="button">
+        </div>
+        <div class="box">
+            <img src="../images/sago.png" alt="images" class="plantImage">
+            <h4>Sago Palm</h4>
+            <p>The Sago Palm (Cycas revoluta) is a species of cycad that is native to Japan and commonly used as an
+                ornamental plant and as a source of food and medicine. Sago palms are often used in landscaping and as
+                houseplants,
+                and are prized for their unique appearance and ease of care.</p>
+            <p>Price: <span>$45.99</span></p>
+            <div class="rating">
+                <a href="#"><img src="../images/star-fill.png"></a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <a href="#"><img src="../images/star-half-line.png"> </a>
+                <label style="margin-left: 5px;">270 review</label>
+            </div>
+            <input type="button" value="Buy Now" id="button">
+            <input type="button" value="Add to Cart" id="button">
+        </div>
+        <div class="box">
+            <img src="../images/rock jupiner.png" alt="images" class="plantImage">
+            <h4>Rock jupiner</h4>
+            <p>This alluring Rock Juniper Bonsai tree embodies the strength and serenity of Bonsai
+                in a more compact form. If you're short on space, this juniper bonsai tree may nevertheless offer color
+                and harmony while retaining all the qualities of its bigger counterpart.</p>
+            <label>Price: <span>$56.89</span></label><br>
+            <div class="rating">
+                <a href="#"><img src="../images/star-fill.png"></a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <a href="#"><img src="../images/star-half-line.png"> </a>
+                <label style="margin-left: 5px;">50 review</label>
+            </div>
+            <input type="button" value="Buy Now" id="button">
+            <input type="button" value="Add to Cart" id="button">
+        </div>
+        <div class="box">
+            <img src="../images/Pomegranate Bonsai.png" alt="images" class="plantImage">
+            <h4>Pomegranate Bonsai</h4>
+            <p>One of the two species that make up the genus Punica is Punica granatum. Pomegranates are indigenous to
+                the Mediterranean and Asia. They have spectacular funnel-shaped blooms that come in a range of hues, and
+                opposite, narrowly rectangular, glossy leaves.
+                Yellow fruits with a leathery exterior and red blush follow the flowers.</p>
+            <p>Price: <span>$70.89</span></p>
+            <div class="rating">
+                <a href="#"><img src="../images/star-fill.png"></a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <a href="#"><img src="../images/star-half-line.png"> </a>
+                <label style="margin-left: 5px;">88 review</label>
+            </div>
+            <input type="button" value="Buy Now" id="button">
+            <input type="button" value="Add to Cart" id="button">
+        </div>
+        <div class="box">
+            <img src="../images/Boxwood.jpg" alt="images" class="plantImage">
+            <h4>Boxwood </h4>
+            <p>The Boxwood is a fantastic bonsai tree subject due to its small, leathery leaves, thick growth habits,
+                and rough bark.
+                The boxwood bonsai tree is ideal for an inside setting, such as your house or office, as it requires
+                little sunshine.</p>
+            <p>Price: <span>$40.99</span></p>
+            <div class="rating">
+                <a href="#"><img src="../images/star-fill.png"></a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <a href="#"><img src="../images/star-fill.png"> </a>
+                <label style="margin-left: 5px;">30 review</label>
+            </div>
+            <input type="button" value="Buy Now" id="button">
+            <input type="button" value="Add to Cart" id="button">
+        </div>
+        <div class="box">
+            <img src="../images/Floweringteatree.png" alt="images" class="plantImage">
+            <h4>Fujian</h4>
+            <p>The Fujian or Fukien Tea tree, one of our more well-known plants, has blossoming white blossoms in
+                addition to the Chinese Elm's identical leaf and trunk characteristics.
+                Although they occur throughout the year, blooms are more common in the spring and early winter.</p>
+            <p>Price: <span>$40.35</span></p>
+            <div class="rating">
+                <a href="#"><img src="../images/star-fill.png"></a>
+                <a href="#"><img src="../images/star-fill.png"></a>
+                <a href="#"><img src="../images/star-fill.png"></a>
+                <a href="#"><img src="../images/star-fill.png"></a>
+                <a href="#"><img src="../images/star-half-line.png"></a>
+                <label style="margin-left: 5px;">200 review</label>
+            </div>
+            <input type="button" value="Buy Now" id="button">
+            <input type="button" value="Add to Cart" id="button">
+        </div>
+    </div>
+
+    <!-- box1 -->
+    <div class="h1">
+        <h1 class="intro">Offers at KSB Bonsai</h1>
+        <div class="productContainer">
+            <div class="box1">
+                <img src="../images/Miniature Golden Gate Ficus.png" alt="images" class="plantImage">
+                <h4>Miniature Golden Gate Ficus</h4>
+                <p>It's not as tough to care for as one might expect this lovely small Golden Gate ficus bonsai tree.
+                    The
+                    Golden Gate Ficus Bonsai Tree, also known as the Taiwan Ficus Bonsai Tree,
+                    is one of the most resilient varieties of ficus bonsai trees and may be grown both indoors and
+                    outdoors.
+                </p>
+                <p>Price: <span class="offer">$70.05</span> = $55.99</p>
+                <div class="rating">
+                    <a href="#"><img src="../images/star-fill.png"></a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-half-line.png"></a>
+                    <label style="margin-left: 5px;">70 review</label>
+                </div>
+                <input type="button" value="Buy Now" id="button">
+                <input type="button" value="Add to Cart" id="button">
+            </div>
+            <div class="box1">
+                <img src="../images/Miniature Mikawa Yatsubusa Maple Bonsai.png" alt="images" class="plantImage">
+                <h4>Miniature Mikawa Yatsubusa Maple Bonsai</h4>
+                <p>From spring through summer, a lush canopy of emerald green foliage covers this distinctive Japanese
+                    maple
+                    cultivar. The foliage is firmly staked as though it were tiles on a roof, arranged spherically. In
+                    the
+                    fall, they exhibit flaming orange and deep crimson tones.
+                </p>
+                <p>Price: <span class="offer">$200.00 </span>= $170.50</p>
+                <div class="rating">
+                    <a href="#"><img src="../images/star-fill.png"></a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-half-line.png"> </a>
+                    <label style="margin-left: 5px;">28 review</label>
+                </div>
+                <input type="button" value="Buy Now" id="button">
+                <input type="button" value="Add to Cart" id="button">
+            </div>
+            <div class="box1">
+                <img src="../images/Japanese Black Pine Bonsai.png" alt="images" class="plantImage">
+                <h4>Japanese Black Pine Bonsai</h4>
+                <p>The Japanese Black Pine's delicate green needles are a highly desired feature of this pine bonsai.
+                    Each
+                    pine bonsai is beautifully unique, growing upward and outward.
+                    Additionally, the tree receives routine candle maintenance to maintain its branch structure.</p>
+                <p>Price: <span class="offer">$150.00 </span>= $110.50</p>
+                <div class="rating">
+                    <a href="#"><img src="../images/star-fill.png"></a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-half-line.png"></a>
+                    <label style="margin-left: 5px;">160 review</label>
+                </div>
+                <input type="button" value="Buy Now" id="button">
+                <input type="button" value="Add to Cart" id="button">
+            </div>
+            <div class="box1">
+                <img src="../images/Satsuki.png" alt="images" class="plantImage">
+                <h4>Satsuki Azalea(Pink Blossom)</h4>
+                <p>Satsuki Azalea (Rhododendron indicum) is a species of azalea native to Japan.
+                    It is a popular ornamental shrub, prized for its abundant, colorful blooms.hey prefer moist,
+                    well-drained soil and partial shade,
+                    and are often grown in containers or as bonsai specimens.And are considered a symbol of spring in
+                    Japanese culture.</p>
+                <p>Price: <span class="offer">$92.00</span>= $49.00</p>
+                <div class="rating">
+                    <a href="#"><img src="../images/star-fill.png"></a>
+                    <a href="#"><img src="../images/star-fill.png"></a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-half-line.png"> </a>
+                    <label style="margin-left: 5px;">69 review</label>
+                </div>
+                <input type="button" value="Buy Now" id="button">
+                <input type="button" value="Add to Cart" id="button">
+            </div>
+            <div class="box1">
+                <img src="../images/fujikan.png" alt="images" class="plantImage">
+                <h4>Flowering Tea Tree </h4>
+                <p>Fujian Tea, also known as Fukien Tea, is a type of Chinese tea tree that is native to the Fujian
+                    province of China. It is known for producing teas such as Oolong and black teas,
+                    and is prized for its fragrant leaves and delicate flavor.</p>
+                <p>Price: <span class="offer">$69.00 </span>= $59.20</p>
+                <div class="rating">
+                    <a href="#"><img src="../images/star-fill.png"></a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-half-line.png"></a>
+                    <label style="margin-left: 5px;">240 review</label>
+                </div>
+                <input type="button" value="Buy Now" id="button">
+                <input type="button" value="Add to Cart" id="button">
+            </div>
+            <div class="box1">
+                <img src="../images/taiwan.png" alt="images" class="plantImage">
+                <h4>10" Taiwan Ficus</h4>
+                <p>Taiwan Ficus is a common name for a bonsai species of fig tree (Ficus microcarpa),
+                    native to Southeast Asia and Taiwan. The tree is popular for its attractive glossy leaves and is
+                    commonly used as an indoor bonsai, as well as an outdoor ornamental tree in warm climates.
+                    Ficus microcarpa is known for its ability to tolerate low light and adapt to different growing
+                    conditions</p>
+                <p>Price: <span class="offer">$89.00</span> = $66.20</p>
+                <div class="rating">
+                    <a href="#"><img src="../images/star-fill.png"></a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-fill.png"> </a>
+                    <a href="#"><img src="../images/star-half-line.png"> </a>
+                    <label style="margin-left: 5px;">69 review</label>
+                </div>
+                <input type="button" value="Buy Now" id="button">
+                <input type="button" value="Add to Cart" id="button">
+            </div>
+        </div>
+    </div>
+
+    <!-- based on style -->
+    <div class="h1">
+        <h1 class="intro">Based On Style</h1>
+        <div class="productContainer">
+            <div class="box1">
+                <img src="../images/FUS.jpg" alt="images" class="plantImage">
+                <h4>Formal Upright Style (<i>Chokan</i>)</h4>
+                <p>This form of bonsai resembles trees that are growing naturally in an uncrowded, open environment. The
+                    trunk line must taper from the base to the apex since it is vertical with the apex being over the
+                    center
+                    of the trunk base. The space between branches is less and each succeeding branch is shorter than
+                    those below it.</p>
+                <input type="button" value="Show more" id="button">
+            </div>
+            <div class="box1">
+                <img src="../images/INS.jpg" alt="images" class="plantImage">
+                <h4>Informal Upright Style (<i>Moyogi</i>)</h4>
+                <p>The most popular bonsai style is certainly this one. It shows a tree in the wild that has been harmed
+                    by
+                    the weather, with contorted branches and a trunk line.
+                    In the natural world, this shape is produced by the ongoing breaking of the trunk line caused by
+                    storms,
+                    ice, snow, or animal or insect activity.</p>
+
+                <input type="button" value="Show more" id="button">
+            </div>
+            <div class="box1">
+                <img src="../images/SS.jpg" alt="images" class="plantImage">
+                <h4>Slanting Style(<i>Shakan</i>)</h4>
+                <p>When observing trees in the wild, one frequently notices those that have been tipped to one side by
+                    the
+                    effects of wind or water, as well as those that lean at an angle in search of sunshine. To balance
+                    the
+                    weight of the tree's slant to the opposite side, these trees have evolved robust root systems on one
+                    side.</p>
+                <input type="button" value="Show more" id="button">
+            </div>
+            <div class="box1">
+                <img src="../images/SCS.jpg" alt="images" class="plantImage">
+                <h4>Semi-Cascade Style(<i>Han-kengai</i>)</h4>
+                <p>This design is intended to represent a tree that is suspended from a cliffside by a stream or the
+                    ocean.
+                    The tree extends past the pot's rim and its trunk curves downward past the rim but not below the
+                    pot's
+                    base.</p>
+                <input type="button" value="Show more" id="button">
+            </div>
+            <div class="box1">
+                <img src="../images/FCS.jpg" alt="images" class="plantImage">
+                <h4>Full Cascade Style (<i>Kengai</i>)</h4>
+                <p>Except that the cascading line of this bonsai style is lower than the container's base, it adheres to
+                    the
+                    semi-cascade principles. In order for the trunk line to extend as far, this necessitates
+                    placing the bonsai on a stand. </p>
+                <input type="button" value="Show more" id="button">
+            </div>
+            <div class="box1">
+                <img src="../images/DTS.jpg" alt="images" class="plantImage">
+                <h4>Double Trunk Style(<i>Kengai</i>)</h4>
+                <p>In this design, a tree with two trunks is shown. Typically, two trees with various diameters' trunks
+                    have
+                    grown together at the base and are now fashioned as a single tree. Between the trunks, no branches
+                    may
+                    develop.</p>
+                <input type="button" value="Show more" id="button">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- The footer tag is for foot setion at the bottom area of webpage -->
+        <div style="height: 1.5px; background-color: gray; margin: 0px;"> </div>
+        <div class="Footer-main">
+            <div class="footer-box"
+                style="text-align: center; display: flex; justify-content: space-between; flex-direction: column; flex-wrap: wrap;">
+                <!-- the style is for this container only -->
+                <div class="footer-logo">
+                    <img src="../images/logo2.png" alt="logo" style="border-radius: 50%; height: 200px;">
+                </div>
+                <div class="SocialMedia">
+                    <a href="http://"><img src="../images/Facebook.png" alt="Facebook"></a>
+                    <a href="http://"><img src="../images/instagram.png" alt="Instagram"></a>
+                    <a href="http://"><img src="../images/pinterest.png" alt=""></a>
+                    <a href="http://"><img src="../images/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <h3>Customer care</h3>
+                <p>Contact us</p>
+                <p>Phone no: <span id="contactNumber">9435987429</span></p>
+                <p>Email: <a href="mailto:ksbBonsai2023@gmail.com" style="color: #112D4E; "
+                        id="email">ksbBonsai2023@gmail.com</a> </p>
+                <a href="../Pages/FeedbackForm.html">
+                    <p>FeedbackForm</p>
+                </a>
+
+            </div>
+            <div class="footer-box">
+                <h3>Resources</h3>
+                <p>Terms of condition</p>
+                <p>Privacy policy</p>
+                <p>Support</p>
+                <p>learn design</p>
+            </div>
+            <div class="footer-box">
+                <h3>Community</h3>
+                <p>Discussion Formus</p>
+                <p>Code of Conduct</p>
+                <p>Contributing</p>
+                <p>API Reference</p>
+            </div>
+        </div>
+        <div style="height: 1.5px; background-color: gray; margin: 0px;"> </div>
+        <section style="padding-left: 30px;">
+            <p>All Nepal | Kathmandu | Pokhara | Lalitpur | Bhaktapur | Biratnagar | Butwal | Dang | Chitwan |
+                Heatuda |
+                Nepalgunj |</p>
+            <p> <img src="../images/copyright-line.png" alt=""> 2023 | KSB_Bonsai</p>
+        </section>
+    </footer>
+</body>
+
+</html>

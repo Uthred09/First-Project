@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <style>
+        *{
+            background-color: #F4EEFF;
+        }
+        body {
+            margin: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+
+        .Feedback {
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            color: #424874;
+            font-size: xx-large;
+            font-weight: 600;
+        }
+        .box {
+            width: 35%;
+            padding: 15px;
+        }
+        .childbox{
+            margin-top: 15px;
+            padding: 8px;
+        }
+        label{
+            font-size: larger;
+        }
+        .star{
+            color: red;
+        }
+        .inputbox {
+            width: 80%;
+            height: 25px;
+            padding: 5px;
+            margin-top: 3px;
+            border-radius: 5px;
+            font-size: large;
+        }
+        #MessageBox{
+            width: 85%;
+            height: 200px;
+        }
+        #sumbitbutton{
+            width: 150px;
+            padding: 10px;
+            margin: 10px;
+            font-size: medium;
+            border-radius: 5px;
+            
+        }
+        #sumbitbutton:hover{
+            width: 160px;
+            background-color: #222831;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <form class="Feedback" name="messageForm" onsubmit="validateForm()">
+        <div class="box">
+            <section>
+                <h1>FeedBack Form</h1>
+                <p>We will like to hear your Thoughts, suggestions, concern or problems
+                    with anything so we can improve!
+                </p>
+            </section>
+            <div style="height: 2px; background-color: gray; margin: 0px;"></div>
+            <div class="childbox">
+                <label>First Name <span class="star">*</span></label><br>
+                <input type="text" name="fname" class="inputbox">
+                <br>
+                <br>
+                <label>Last Name <span class="star">*</span></label><br>
+                <input type="text" name="lname" class="inputbox">
+                <br>
+                <br>
+                <label>Email <span class="star">*</span></label><br>
+                <input type="email" name="email" class="inputbox">
+                <br>
+                <br>
+                <label>Gender: </label>
+                <input type="radio" name="genderDetails" value="male">Male
+                <input type="radio" name="genderDetails" value="Female" checked>Female
+                <input type="radio" name="genderDetails" id="Others">Other
+                <br>
+                <br>
+
+                <label>Write your Message <span class="star">*</span></label>
+                <br>
+                <textarea name="message" id="MessageBox" class="inputbox"></textarea>
+            </div>
+                <input type="submit" value="Submit Feedback" id="sumbitbutton">
+        </div>
+    </form>
+    <script type="text/javascript">
+        function validateForm() {
+            var firstname = document.forms["messageForm"]["fname"].value;
+            var lastname = document.forms["messageForm"]["lname"].value;
+            var email = document.forms["messageForm"]["email"].value;
+            var Gender = document.forms["messageForm"]["genderDetails"].value;
+            var MessageDetail = document.forms["messageForm"]["message"].value;
+
+            //alert(messageDetail);
+            if (firstname == "" || lastname == "" || email == "" || MessageDetail == "") {
+                alert("Please fill all the empty field");
+            } else {
+                alert("Thankyou for your feedback");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
